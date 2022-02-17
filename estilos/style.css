@@ -1,0 +1,166 @@
+                                            /* generales sass*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*cuerpo*/
+body {
+
+  background-color:#212529;
+
+}
+/*menú*/
+
+a { 
+  text-decoration: none;
+  color:rgb(250, 245, 245);
+}  
+
+.nav-link{
+  display: flex;
+  justify-content: right;
+  margin-left: 40px;
+}
+
+                                     /*hasta acá generales sass*/
+/* nosotros*/
+  .parrafo {
+  color:rgb(250, 245, 245);
+  margin: 80px;
+}
+/*index*/
+
+nav ul li {
+     display: block;
+     margin-top: 40px;
+     margin-right: 50px;
+     margin-left: 85px;
+}
+.titulo{
+  font-size: 300%;
+  color: #FFD700;
+  text-align: center;
+  margin: 100px;
+  font-family:'comforter';
+  
+ }
+
+.parasiteOscar{
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(3, 4fr);
+  grid-template-areas: 
+  "foto1 foto2"
+  "foto4 foto3"
+  "foto5 foto6"
+  ;
+}
+
+.foto1{
+  grid-area: foto1;
+  background-color: rgb(180, 58, 58);
+}
+.foto2{
+  grid-area: foto2;
+  background-color: rgb(180, 58, 58);
+}
+.foto3{
+  grid-area: foto3;
+  background-color: rgb(180, 58, 58);
+}
+.foto4{
+  grid-area: foto4;
+  background-color: rgb(180, 58, 58);
+}
+.foto5{
+  grid-area: foto5;
+  background-color: rgb(180, 58, 58);
+}
+.foto6{
+  grid-area: foto6;
+  background-color: rgb(180, 58, 58);
+}
+/*consultar si este media va en generales o dónde en sass*/
+@media only screen and (max-width:700px){
+  nav{
+    background-color: turquoise;
+}
+
+
+.parasiteOscar{
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 6fr;
+  grid-template-areas: 
+  "foto1"
+  "foto2"
+  "foto3"
+  "foto4"
+  "foto5"
+  "foto6"
+  ;
+  
+}
+}
+/*servicios*/
+.peliculas{
+  justify-items: center;
+  align-items: center;
+  margin: 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: 
+  "peli1 peli2"
+  "peli3 peli4"
+  ;
+}
+
+.peli1{
+  grid-area: peli1;
+  
+}
+
+.peli2{
+  grid-area: peli2;
+
+}
+
+.peli3{
+  grid-area: peli3;
+  
+}
+
+.peli4{
+  grid-area: peli4;
+  
+}
+
+/*media queries*/
+
+@media only screen and (max-width: 700px){
+  
+  .peliculas{
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 6fr;
+    grid-template-areas:
+    "peli1"
+    "peli2"
+    "peli3"
+    "peli4"
+    ;
+  }
+}
+                                       /*hasta acá sercicios*/
+/*Contacto*/
+.form-label{
+   color: aliceblue;
+}
+
+
+
+

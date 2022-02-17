@@ -1,0 +1,24 @@
+/* generales sass*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*cuerpo*/
+body {
+
+  background-color:#212529;
+
+}
+/*menú*/
+
+a { 
+  text-decoration: none;
+  color:rgb(250, 245, 245);
+}  
+
+.nav-link{
+  display: flex;
+  justify-content: right;
+  margin-left: 40px;
+}

@@ -1,0 +1,92 @@
+/*index*/
+/*Acá va sólo li?*/
+nav ul li {
+    display: block;
+    margin-top: 40px;
+    margin-right: 50px;
+    margin-left: 85px;
+}
+.titulo{
+ font-size: 300%;
+ color: #FFD700;
+ text-align: center;
+ margin: 100px;
+ font-family:'comforter';
+ 
+}
+/*no sé por qué el logo no sube. Puedo agregar cualquier valor de px que sólo queda en ese tamaño?*/
+.logo{
+  font-size: 200px;
+}
+
+.parasiteOscar{
+ justify-items: center;
+ align-items: center;
+ display: grid;
+ grid-template-columns: repeat(2, 2fr);
+ grid-template-rows: repeat(3, 4fr);
+ grid-template-areas: 
+ "foto1 foto2"
+ "foto4 foto3"
+ "foto5 foto6"
+ ;
+}
+
+.foto1{
+ grid-area: foto1;
+ 
+}
+.foto2{
+ grid-area: foto2;
+ ;
+}
+.foto3{
+ grid-area: foto3;
+ 
+}
+.foto4{
+ grid-area: foto4;
+ 
+}
+.foto5{
+ grid-area: foto5;
+ 
+}
+.foto6{
+ grid-area: foto6;
+ 
+}
+@media only screen and (max-width:700px){
+ nav{
+   background-color: turquoise;
+}
+.parasiteOscar{
+ display: grid;
+ grid-template-columns: 2fr;
+ grid-template-rows: 6fr;
+ grid-template-areas: 
+ "foto1"
+ "foto2"
+ "foto3"
+ "foto4"
+ "foto5"
+ "foto6"
+ ;
+}
+}
+.redsocial{
+  border: 1px black solid;
+  background-color:rgb(207, 204, 204);
+}
+.redsocial--nueva{
+  @extend.redsocial;
+  font-size: 10px;
+}
+@mixin sizes($width,$height){
+  height: $height;
+  width: $width;
+}
+/*Hasta acá compila bien, pero seguro hay un problema en @include porque no compila*/
+.box{
+  @include size(85px,75px)
+}

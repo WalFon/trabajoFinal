@@ -1,0 +1,186 @@
+@charset "UTF-8";
+/* generales sass*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*cuerpo*/
+body {
+  background-color: #212529;
+}
+
+/*menú*/
+a {
+  text-decoration: none;
+  color: #faf5f5;
+}
+
+.nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  margin-left: 40px;
+}
+
+/*index*/
+/*Acá va sólo li?*/
+nav ul li {
+  display: block;
+  margin-top: 40px;
+  margin-right: 50px;
+  margin-left: 85px;
+}
+
+.titulo {
+  font-size: 300%;
+  color: #FFD700;
+  text-align: center;
+  margin: 100px;
+  font-family: 'comforter';
+}
+
+/*no sé por qué el logo no sube. Puedo agregar cualquier valor de px que sólo queda en ese tamaño?*/
+.logo {
+  font-size: 200px;
+}
+
+.parasiteOscar {
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (2fr)[2];
+      grid-template-columns: repeat(2, 2fr);
+  -ms-grid-rows: (4fr)[3];
+      grid-template-rows: repeat(3, 4fr);
+      grid-template-areas: "foto1 foto2" "foto4 foto3" "foto5 foto6";
+}
+
+.foto1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: foto1;
+}
+
+.foto2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: foto2;
+}
+
+.foto3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: foto3;
+}
+
+.foto4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: foto4;
+}
+
+.foto5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: foto5;
+}
+
+.foto6 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: foto6;
+}
+
+@media only screen and (max-width: 700px) {
+  nav {
+    background-color: turquoise;
+  }
+  .parasiteOscar {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr;
+        grid-template-columns: 2fr;
+    -ms-grid-rows: 6fr;
+        grid-template-rows: 6fr;
+        grid-template-areas: "foto1" "foto2" "foto3" "foto4" "foto5" "foto6";
+  }
+}
+
+.redsocial, .redsocial--nueva {
+  border: 1px black solid;
+  background-color: #cfcccc;
+}
+
+.redsocial--nueva {
+  font-size: 10px;
+}
+
+/*.box{
+  @include size(700px,75px)
+}*/
+/*servicios*/
+.peliculas {
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 80px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "peli1 peli2" "peli3 peli4";
+}
+
+.peli1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: peli1;
+}
+
+.peli2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: peli2;
+}
+
+.peli3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: peli3;
+}
+
+.peli4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: peli4;
+}
+
+/*media queries*/
+@media only screen and (max-width: 700px) {
+  .peliculas {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr;
+        grid-template-columns: 2fr;
+    -ms-grid-rows: 6fr;
+        grid-template-rows: 6fr;
+        grid-template-areas: "peli1" "peli2" "peli3" "peli4";
+  }
+}
+
+.form-label {
+  color: aliceblue;
+}
+/*# sourceMappingURL=estilos.css.map */
