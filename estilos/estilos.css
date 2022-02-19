@@ -121,11 +121,12 @@ nav ul li {
 }
 
 .redsocial--nueva {
-  font-size: 10px;
+  font-size: 1px;
 }
 
+/*Hasta acá compila bien, pero seguro hay un problema en @include porque no compila*/
 /*.box{
-  @include size(700px,75px)
+  @include size(85px,75px)
 }*/
 /*servicios*/
 .peliculas {
